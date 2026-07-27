@@ -6,13 +6,13 @@ _聊天记录工具，帮助大家轻松使用自己的聊天数据_
 
 [![ImgMCP](https://cdn.imgmcp.com/imgmcp-logo-small.png)](https://imgmcp.com)
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/sjzar/chatlog)](https://goreportcard.com/report/github.com/sjzar/chatlog)
-[![GoDoc](https://godoc.org/github.com/sjzar/chatlog?status.svg)](https://godoc.org/github.com/sjzar/chatlog)
-[![GitHub release](https://img.shields.io/github/release/sjzar/chatlog.svg)](https://github.com/sjzar/chatlog/releases)
-[![GitHub license](https://img.shields.io/github/license/sjzar/chatlog.svg)](https://github.com/sjzar/chatlog/blob/main/LICENSE)
-
+[![CI](https://github.com/0x032c/chatlog/actions/workflows/ci.yml/badge.svg)](https://github.com/0x032c/chatlog/actions/workflows/ci.yml)
+[![GitHub release](https://img.shields.io/github/release/0x032c/chatlog.svg)](https://github.com/0x032c/chatlog/releases)
+[![GitHub license](https://img.shields.io/github/license/0x032c/chatlog.svg)](https://github.com/0x032c/chatlog/blob/main/LICENSE)
 
 </div>
+
+> **维护说明**：本仓库 ([0x032c/chatlog](https://github.com/0x032c/chatlog)) 是对上游 [sjzar/chatlog](https://github.com/sjzar/chatlog) 的社区维护 fork，主要做依赖安全更新与 Release 修复；上游已于 2025-10 停更。问题请提交到 [Issues](https://github.com/0x032c/chatlog/issues)。
 
 ## Feature
 
@@ -50,14 +50,19 @@ _聊天记录工具，帮助大家轻松使用自己的聊天数据_
 ### 从源码安装
 
 ```bash
-go install github.com/sjzar/chatlog@latest
+git clone https://github.com/0x032c/chatlog.git
+cd chatlog
+make build
+# 二进制输出在 bin/chatlog
 ```
 
-> 💡 **提示**: 部分功能有 cgo 依赖，编译前需确认本地有 C 编译环境。
+> 💡 **提示**: 部分功能有 cgo 依赖，编译前需确认本地有 C 编译环境（Linux 需 `gcc`、`libsqlite3-dev`）。
+
+上游模块路径仍为 `github.com/sjzar/chatlog`，也可使用 `go install github.com/sjzar/chatlog@latest`（可能无新 release）。
 
 ### 下载预编译版本
 
-访问 [Releases](https://github.com/sjzar/chatlog/releases) 页面下载适合您系统的预编译版本。
+访问 [Releases](https://github.com/0x032c/chatlog/releases) 页面下载适合您系统的预编译版本。
 
 ## 使用指南
 

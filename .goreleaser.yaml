@@ -85,7 +85,7 @@ checksum:
 
 # 配置 GitHub Release
 release:
-  draft: true
+  draft: false
   prerelease: auto
   mode: replace
 

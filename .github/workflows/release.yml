@@ -13,7 +13,7 @@ jobs:
     name: Release Binary and Docker
     runs-on: ubuntu-latest
     container:
-      image: goreleaser/goreleaser-cross:v1.24
+      image: goreleaser/goreleaser-cross:v1.25.4
     permissions:
       contents: write
       packages: write
